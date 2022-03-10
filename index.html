@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Indie+Flower&family=Nunito:wght@600&display=swap"rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Edens Sketchbook</title>
+  </head>
+
+  <body id="container">
+    <div id="header">
+      <h2 class="mt-4">edens sketchbook</h2>
+      <a><input class="pencil grow" type="image" src="images/pencil.png"/></a>
+    </div>
+
+    <div id="content">
+      <img
+        id="bookshelf"
+        class="mask1"
+        src="images/bookshelf.jpg"
+        alt="background image"
+      />
+    </div>
+
+
+    <div class="bottomContent">
+      <div class="body">
+        <img class="head-icon" src="images/man.png" alt="" />
+        <h1>I'm hae jin</h1>
+        <h1>a web developer</h1>
+
+        <h1 class="lorem">
+         A developing side project to showcase my learning curve.
+         <ul>
+           <li>
+             Wrote a simple website to have users signup for my newsletter.
+           </li>
+           <li>
+             Tried using Mailchimp mail API using NodeJs and spent days trying to get it to work on Github pages. Stackoverflow reminded me Github only supported static apps...
+           </li>
+           <li>
+             Deployed on <a href="https://edens-sketchbook-website-app.herokuapp.com/">Heroku</a>.
+           </li>
+           <li>
+             Scroll through and select a color from the pastel color image below to change the background color of the website, and get the HEX/RGB code as well. 
+           </li>
+         </ul>
+        </h1>
+      </div>
+
+      <div class="pastelColor">
+        <div class="preview result"> <span>&nbsp HEX: #22142b</span>
+          <span>&nbsp RGB: (34,20,43)</span></div>
+
+        <img src="images/pastel.jpg" alt="" />
+      </div>
+
+      <div class="result">
+        <!-- <span>HEX: #22142b</span>
+        <span>RGB: rgb(34,20,43)</span> -->
+      </div>
+
+      <canvas id="cs"></canvas>
+    </div>
+
+    <footer>
+      <ul class="mt-4 footerIcon">
+        <li class="icon size">
+          <a href="https://www.facebook.com"
+            ><img src="images/facebook.png" alt="facebook icon"
+          /></a>
+        </li>
+        <li class="icon space size">
+          <a href="https://www.instagram.com"
+            ><img src="images/instagram.png" alt="instagram icon"
+          /></a>
+        </li>
+        <li class="icon space size">
+          <a href="https://www.twitter.com"><img src="images/twitter.png" alt="twitter icon"/></a>
+        </li>
+      </ul>
+      <p class="text-center mb-3 text-muted">&copy; Edens Sketchbook</p>
+    </footer>
+
+
+   
+      <div class="modal">
+        <form action="https://formsubmit.co/7522e92b2f613d44854d0b5ac6f2d5f8" method="post">
+          <img
+            class="mb-2"
+            src="images/man.png"
+            alt=""
+            width="100"
+            height="100"
+          />
+          <h1 class="mb-3">Signup for my newsletter!</h1>
+
+          <div>
+            
+            <input type="text" name="FirstName" class="mb-1 form-control" placeholder="First Name" required autofocus autocomplete="off"/>
+            <input type="text" name="LastName" class="mb-1 form-control" placeholder="Last Name" required autocomplete="off"/>
+            <input type="email" name="Email" class="form-control" placeholder="Email" required autocomplete="off"/>
+         
+          <button class="mt-2 w-100 btn btn-lg btn-primary sendBtn" type="submit">Sign in</button>
+          <button class="mt-1 w-100 btn btn-lg closeBtn" type="submit">Cancel</button>
+
+          <p class="mt-3 mb-3 text-muted">&copy; Edens Sketchbook</p>
+        </form>
+      </div>
+   
+
+    <script src="script.js"></script>
+
+  </body>
+  
+</html>
