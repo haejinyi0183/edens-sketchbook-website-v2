@@ -137,8 +137,12 @@ h2 {
   width: 100%;
   overflow: hidden;
   margin: 0 auto;
-  margin-top: 60px;
+  /* margin-top: 60px; */
   cursor: crosshair;
+}
+
+.pastelRadius {
+  border-radius: 25px;
 }
 
 .pastelColor img {
