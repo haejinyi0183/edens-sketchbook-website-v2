@@ -150,6 +150,7 @@ h2 {
 }
 
 .pencil {
+  width: 100%;
   opacity: 0.7;
   float: right;
   margin-left: 90%;
