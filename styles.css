@@ -4,6 +4,7 @@
 }
 
 body {
+  display: block;
   margin: 0;
   background: #4bb0d8;
 }
@@ -81,12 +82,12 @@ body {
 }
 
 .grow:hover {
-  transform: scale(1.9);
+  transform: scale(1.4);
 }
 
 .head-icon {
   position: relative;
-  max-width: 15em;
+  max-width: 13em;
   padding-top: 0%;
 }
 
@@ -214,3 +215,66 @@ ul {
   font-size: 0.9em;
   text-align: left;
 }
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 700px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 700px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 700px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 700px),
+only screen and (                min-resolution: 192dpi) and (min-width: 700px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 700px) { 
+
+  .bottomContent {
+    position: relative;
+    margin-top: -400px;
+    margin-bottom: 400px;
+    
+  }
+  body {
+    padding-bottom: 0 !important;
+  }
+  .bodyText {
+    color: aliceblue;
+  }
+  .head-icon {
+    position: relative;
+    max-width: 20em;
+    padding-top: 0%;
+  }
+  .modal {
+    max-height: 68vh;
+  }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1300px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1300px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 1300px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1300px),
+only screen and (                min-resolution: 192dpi) and (min-width: 1300px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 1300px) { 
+
+  /* Large screen, retina, stuff to override above media query */
+  body {
+    padding-bottom: 0 !important;
+  }
+
+  .bottomContent {
+    position: relative;
+    margin-top: -700px;
+    margin-bottom: 700px;
+  }
+  .bodyText {
+    color: aliceblue;
+  }
+  .head-icon {
+    position: relative;
+    max-width: 20em;
+    padding-top: 0%;
+  }
+  .modal {
+max-height: 70vh;
+  }
+}
+
+
